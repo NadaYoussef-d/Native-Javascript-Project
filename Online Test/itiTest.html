@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300&display=swap">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="itiTest.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logIn" > 
+            <h3>log in</h3>
+            <form class="form">
+                    User Name <input type="text" name="userName" id="userName" placeholder="Nada Youssef" required><br><br>
+                    Password <input type="number" name="Password" id="password" required><br><br>
+                    <!-- <button type="submit" id="ok">ok</button> -->
+                    <button type="reset"> Reset</button>
+                </form> <br>
+                <button id="ok"> submit </button>
+        </div>
+        <div class="row content">
+            <div class="col col-7">
+                <div class="main" id="onlyone">
+                    <!-- <div class="question">
+                    1 - what is the instructor name? 
+                    </div><br>
+                    <div class="answers">
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" > a)ahmed</label>
+                          </div>
+                          <div class="radio">
+                            <label><input type="radio" name="optradio" >b)osama</label>
+                          </div>
+                          <div class="radio">
+                            <label><input type="radio" name="optradio" >c)menna</label>
+                          </div>
+                          <div class="radio">
+                            <label><input type="radio" name="optradio" >d)omnia</label>
+                          </div>
+                    </div> -->
+                </div>
+                <div class="scroller">
+                    <button id="prev" onclick="prev()">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <span class="indexer1">
+                        <table>
+                            <tr>
+                                <th id="one">1</th>
+                                <th id="two">2</th>
+                                <th id="three">3</th>
+                                <th id="four">4</th>
+                                <th id="five">5</th>
+                            </tr>
+                        </table>
+                    </span>
+                    <button id="next" onclick="next()">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                    <div>
+                        <button type="button" class="btn btn-primary" id="mark"> Mark </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mark col col-5">
+                <h3>Marked Questions</h3>
+                <ul class="list">
+                    <!-- <li class="item"></li> -->
+                </ul>
+            </div>
+        </div> 
+    </div> 
+    <script src="jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="itiTest.js"></script>
+</body>
+</html>
